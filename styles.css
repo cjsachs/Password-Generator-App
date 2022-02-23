@@ -69,3 +69,9 @@ p {
     color: rgba(234, 240, 240, 0.534);
     cursor: pointer;
 }
+
+.sign {
+    text-align: center;
+    color: #29283575;
+    cursor: text;
+}
