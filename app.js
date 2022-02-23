@@ -10,8 +10,8 @@ const allNumbers = [...'0123456789']
 
 // base length = 91
 const base = [...allCapsAlpha, ...allLowerAlpha, ...allUniqueChars, ...allNumbers]
-
 let eachPassword = [];
+let hasPassword = false;
 
 
 // ------------ FUNCTIONS ----------------
@@ -30,9 +30,18 @@ function randomPassword() {
     return random
 }
 
-function generatePassword() {
+function generatePasswords() {
     for (let i = 0; i < passwordButtonsEl.length; i++) {
-        eachPassword = randomPassword(); // 23khkj3rh3kk
+        hasPassword = true;
+        eachPassword = randomPassword();
         passwordButtonsEl[i].textContent = eachPassword;
+    }
+}
+
+function copyPassword() {
+    let password = '';
+    if (hasPassword === true) {
+        password = passwordButtonsEl.textContent;
+        console.log(password);
     }
 }
