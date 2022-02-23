@@ -10,16 +10,51 @@ body {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+h1 {
+    font-size: 60px;
+}
+
 span {
     color: #cbc7eb;
 }
 
+p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
 .container {
-    width: 550px;
+    min-width: 550px;
+    max-width: 800px;
     margin: auto;
     margin-top: 50px;
     padding: 40px;
     border-radius: 5px;
     border: 1px solid rgba(234, 240, 240, 0.445);
     background-color:  rgba(234,240,240, 0.2);
+}
+
+.generate-password-btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #0f0c29;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 40px 0 20px 0;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.password-btn {
+    width: 300px;
+    padding: 10px 30px;
+    margin: 10px 10px 10px 0;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #29283542;
 }
