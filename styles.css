@@ -35,6 +35,10 @@ p {
     background-color:  rgba(234,240,240, 0.2);
 }
 
+.upper-container {
+    border-bottom: 1px solid rgba(234, 240, 240, 0.445);
+}
+
 .generate-password-btn {
     padding: 15px 30px;
     border-radius: 10px;
@@ -43,10 +47,15 @@ p {
     color: white;
     font-size: 18px;
     margin: 40px 0 20px 0;
+    cursor: pointer;
 }
 
 .icon {
     margin-right: 10px;
+}
+
+.lower-container {
+    margin-top: 20px;
 }
 
 .password-btn {
