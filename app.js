@@ -38,10 +38,34 @@ function generatePasswords() {
     }
 }
 
-function copyPassword() {
-    let password = '';
+function copyPassword1() {
     if (hasPassword === true) {
-        password = passwordButtonsEl.textContent;
-        console.log(password);
+        password = passwordButtonsEl[0].textContent;
+        navigator.clipboard.writeText(password);
+        alert(`This password has been copied: ${password}`)
+    }
+}
+
+function copyPassword2() {
+    if (hasPassword === true) {
+        password = passwordButtonsEl[1].textContent;
+        navigator.clipboard.writeText(password);
+        alert(`This password has been copied: ${password}`)
+    }
+}
+
+function copyPassword3() {
+    if (hasPassword === true) {
+        password = passwordButtonsEl[2].textContent;
+        navigator.clipboard.writeText(password);
+        alert(`This password has been copied: ${password}`)
+    }
+}
+
+function copyPassword4() {
+    if (hasPassword === true) {
+        password = passwordButtonsEl[3].textContent;
+        navigator.clipboard.writeText(password);
+        alert(`This password has been copied: ${password}`)
     }
 }
