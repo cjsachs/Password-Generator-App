@@ -11,6 +11,8 @@ const allNumbers = [...'0123456789']
 // base length = 91
 const base = [...allCapsAlpha, ...allLowerAlpha, ...allUniqueChars, ...allNumbers]
 
+let eachPassword = [];
+
 
 // ------------ FUNCTIONS ----------------
 function randomIndex() {
@@ -18,15 +20,19 @@ function randomIndex() {
     return randomIndex;
 }
 
-function generatePassword() {
+function randomPassword() {
     let random = []
     for (let i = 0; i < 12; i++) {
         random.push(base[randomIndex()])
     }
+
     random = random.join('')
-    return random;
+    return random
 }
 
-for (let i = 0; i < passwordButtonsEl.length; i++) {
-    console.log(generatePassword())
+function generatePassword() {
+    for (let i = 0; i < passwordButtonsEl.length; i++) {
+        eachPassword = randomPassword(); // 23khkj3rh3kk
+        passwordButtonsEl[i].textContent = eachPassword;
+    }
 }

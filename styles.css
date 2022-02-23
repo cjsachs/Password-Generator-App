@@ -66,4 +66,6 @@ p {
     border-radius: 10px;
     border: none;
     background-color: #29283542;
+    color: rgba(234, 240, 240, 0.534);
+    cursor: text;
 }
