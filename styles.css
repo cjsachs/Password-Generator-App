@@ -73,5 +73,10 @@ p {
 .sign {
     text-align: center;
     color: #29283575;
-    cursor: text;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #29283575;
 }
